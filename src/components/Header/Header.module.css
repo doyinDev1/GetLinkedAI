@@ -9,6 +9,7 @@
   grid-column-start: 2;
   grid-column-end: 5;
   padding-top: 24px;
+  padding-bottom: 12px;
   display: flex;
   gap: 12px;
   align-items: center;
