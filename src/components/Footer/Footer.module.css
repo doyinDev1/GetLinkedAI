@@ -1,0 +1,25 @@
+.footer {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  position: fixed;
+  left: 0;
+  bottom: 50px;
+  width: 100%;
+}
+.footerWrap {
+  grid-column-start: 2;
+  grid-column-end: 8;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.footerWrap h1 {
+  font-size: 24px;
+  font-weight: 400;
+  color: #8c8ca1;
+}
+.footerWrap h2 {
+  color: #0e0e2c;
+  font-weight: 500;
+  font-size: 30px;
+}

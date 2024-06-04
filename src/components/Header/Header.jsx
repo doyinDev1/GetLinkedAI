@@ -1,11 +1,12 @@
-import React from 'react'
-import classes from './Header.module.css'
-import { EmojiHappy, TimerStart, Eye } from 'iconsax-react';
-
+import React from 'react';
+import classes from './Header.module.css';
+import { TimerStart, Eye } from 'iconsax-react';
 import { ReactComponent as Logo } from '../../assets/logoo.svg';
-
+import { useTimer } from '../../context/TimerContext';
 
 const Header = () => {
+    const { time, startTimer } = useTimer();
+    startTimer();
     return (
         <nav className={classes.navBar}>
             <div className={classes.navLogo}>
@@ -23,7 +24,7 @@ const Header = () => {
                 <div className={classes.timerWrap}>
                     <TimerStart size="32" color="#755ae2" />
                     <h1>
-                        29:10
+                        {time.minutes}:{time.seconds < 10 ? `0${time.seconds}` : time.seconds}
                         <span>
                             time left
                         </span>
