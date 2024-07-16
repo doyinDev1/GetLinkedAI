@@ -1,10 +1,7 @@
 .footer {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  position: fixed;
-  left: 0;
-  bottom: 50px;
-  width: 100%;
+margin-bottom: 46px;
 }
 .footerWrap {
   grid-column-start: 2;

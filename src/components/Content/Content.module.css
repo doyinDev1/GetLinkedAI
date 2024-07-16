@@ -1,0 +1,61 @@
+.content {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  margin-bottom: 96px;
+}
+
+.contentWrap {
+  grid-column-start: 3;
+  grid-column-end: 11;
+  background-color: var(--plain-white);
+  margin-top: 24px;
+  /* height: 70vh; */
+  border-radius: 20px;
+  padding: 36px 63px 40px 48px;
+  align-items: flex-start;
+}
+.contentWrap h1 {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 25px;
+  padding-bottom: 8px;
+}
+.contentWrap h2 {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22px;
+  padding-bottom: 30px;
+}
+.videoDeck {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  padding-bottom: 40px;
+}
+.leftDeck {
+  grid-column-start: 1;
+  grid-column-end: 5;
+  /* border: 2px solid #755ae2; */
+  border-radius: 10px;
+  height: 300px;
+  /* width: 300px; */
+}
+.rightDeck {
+  grid-column-start: 6;
+  grid-column-end: 10;
+  display: flex;
+  align-items: flex-start;
+
+}
+
+.contentWrap button {
+  padding: 13px 17px;
+  border-radius: 8px;
+  background-color: var(--secondary-color);
+  color: var(--plain-white);
+  cursor: pointer;
+}
+.deckCardWrap{
+   display: flex;
+   gap: 16px;
+   flex-wrap: wrap;
+}
